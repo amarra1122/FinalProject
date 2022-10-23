@@ -1,0 +1,112 @@
+---
+title: "Twitter Sentiment Geographical Index"
+author: "Angelo Marra"
+date: '2022-09-21'
+output: html_document
+---
+```{r, here-I-am, include=FALSE}
+here::i_am(
+  "Project 550 - Intro Preliminary Analysis_Marra FINAL.Rmd"
+)
+```
+
+
+# Introduction
+
+## Data Set
+
+The *Twitter Sentiment Geographical Index* data set is divided into several csv files containing subjective well-being scores from various geographic locations. The subjective well-being scores are also referred to as the *sentiment index* in the study.
+
+ The data ranges from 2012 to 2021, and the sentiment index is stratified into four levels: 
+
+* World
+* Country
+* State
+* County
+
+The data is extremely comprehensive; holding data from multiple countries from every continent.
+
+The variables within the data set are as follows:
+
+===== ===== ===== ===== ===== ===== ===== ===== ===== ===== ===== ===== ===== ===== ===== ===== ===== ===== =====
+
+**DATE:** (Date) The date of the sentiment index
+
+**NAME_0:** (String) The country name
+
+**NAME_1:** (String) The state/province name
+
+**NAME_2:** (String) The county/city name
+
+**SCORE:** (Float) A float value between 0 and 1 representing the
+sentiment index where 1 represents a positive sentiment and 0 represents
+the negative sentiment.
+
+**N**: (Int) The number of posts generated given the specific date
+
+
+===== ===== ===== ===== ===== ===== ===== ===== ===== ===== ===== ===== ===== ===== ===== ===== ===== ===== =====
+
+## Analysis Objectives
+
+ My analysis objectives for this project are as follows:
+
+* **1:** I want to compare subjective well-being between developed and undeveloped nations. I will initially do so through descriptive statistics of the mean sentiment index. Later on I will consider performing t-tests and chi-squared analysis comparing the scores of developed and developing nations.
+
+* **2:** I will analyze the sentiment index for all of the states within the USA to gain an idea of which states' social media users have the highest level of subjective well-being. I plan on creating in-depth visualization for this part of the analysis, and I will determine if there are significant sentiment index differences between states by performing multiple proportions tests within R.
+
+* **3:** I wish to experiment with visualization options within R and educate myself on editing figures and tables within R-Markdown. Because this data set not contain a large amount of variables, I believe that it will offer me a great opportunity to hone my figure and table-making skills, while simultaneously allowing me to focus on R-Markdown exploration. 
+
+
+```{r, include = FALSE}
+## This chunk of code loads packages intended to assist us complete our project##
+library(dplyr) #For dataframe modification
+library(table1) #For table creation
+library(kableExtra) #For table creation
+library(ggplot2) #For figure creation
+```
+
+## Load in Data - State - 2012
+```{r}
+#!   read project_data1 from output directory
+project_data1 <- readRDS(
+  here::here("output/project_data1.rds")
+)
+```
+## Here is a look into the dataframe
+```{r, echo=FALSE}
+head(project_data1, 10)
+```
+
+## Table Creation
+This table displays some descriptive statistics of the sentiment index from some Grecian states. This table was created using Table1.
+```{r, echo=FALSE}
+#Load in final table from project directory
+final.table <- readRDS(
+  here::here("output/final.table.rds")
+)
+
+#Visualize Table
+final.table
+```
+Within this table we are able to see the Mean and Median Sentiment Index Scores across all observations separated by state. *Standard Deviation* is included in the *Mean* row, and the *Minimum and Maximum* sentiment index scores are included in the *Median* row. We may observe that the mean index scores seem to be relatively similar among all Grecian states.
+
+## Figure Creation
+This box plot displays the distribution of the sentiment index from each Grecian state in the data set. Additionally, outliers within the distribution are marked by a red asterisk. This plot was created using ggplot2.
+
+```{r, echo=FALSE, fig.width=12, fig.height =8, fig.cap="Twitter Subjective Wellbeing - Greece"}
+ #Load in final graph from project directory
+final.graph <- readRDS(
+  here::here("output/final.graph.rds")
+)
+
+final.graph
+```
+We observe from this figure that the distribution of the sentiment index is not very different amongst Grecian states. Although, we can observe that among all Grecian states, *Epirus and Western Macedonia* seems to have the most variability in its sentiment index distribution, despite the fact that is has much less outlying data than other states.
+
+
+
+
+
+
+

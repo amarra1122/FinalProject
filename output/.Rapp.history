@@ -1,0 +1,3 @@
+load("/Users/angelomarra/Desktop/FinalProject/output/project_data1.rds")
+load("/Users/angelomarra/Desktop/FinalProject/output/project_data1.rds")
+print(project_data1)
