@@ -5,7 +5,7 @@ date: '2022-10-23'
 output: html_document
 ---
 
-#This document will help explain how to build my final report using my GitHub Repository and Project Directory.
+# This document will help explain how to build my final report using my GitHub Repository and Project Directory.
 
 Github Repository: https://github.com/amarra1122/FinalProject
 
