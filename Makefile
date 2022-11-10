@@ -10,6 +10,9 @@ final.table:
 final.graph:
 	Rscript code/03_make_graph.R
 
+.PHONY: install
+install:
+	Rscript -e "renv::restore(prompt = FALSE)""
 
 .PHONY: clean
 clean:

@@ -10,13 +10,9 @@ output: html_document
 Github Repository: https://github.com/amarra1122/FinalProject
 
 
-## **1:** To begin: Download "num_posts_and_sentiment_summary_2012.csv" - this file was commited into my GitHub Repository (Commit #2 - Add files via upload).
+## **1:** You can proceed to run all four R scripts in the 'code' folder - or use the "Make Final_Project.html" to produce the final project.
 
-Once you have done this place the file directly onto your desktop in order to satisfy the working directory of the code in my project. 
-
-## **2:** Once the data has been loaded in: you can proceed to run all four R scripts in the 'code' folder - or use the Makefile to produce the final project.
-
-## **3:** The code folder contains four seperate R scripts:
+## **2:** The code folder contains four seperate R scripts:
 
 * 01_load_data: Loads in data from your desktop - data is stored as an R object within the output folder.
 
@@ -25,3 +21,7 @@ Once you have done this place the file directly onto your desktop in order to sa
 * 03_make_graph: Creates graph which is reported in the final document - graph is stored as an R object within the output folder.
 
 * 04_render_report: Renders/knits the final Rmd document using the final contents of the output folder.
+
+* Final_Project.html has the contents of my final report thus far
+
+* A make install rule was created within my Makefile in order to restore the package environment for my project.

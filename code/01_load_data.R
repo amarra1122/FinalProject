@@ -4,7 +4,7 @@ here::i_am(
   "code/01_load_data.R"
 )
 
-setwd("~/Desktop")                                                    #Set working directory
+                                                
 project_data1 <- read.csv("num_posts_and_sentiment_summary_2012.csv") #Read CSV file from desktop
 
 project_data1 <- subset(project_data1, NAME_0 == "Greece") 
