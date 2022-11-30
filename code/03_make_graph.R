@@ -1,3 +1,4 @@
+library(ggplot2)
 here::i_am(
   "code/03_make_graph.R"
 )

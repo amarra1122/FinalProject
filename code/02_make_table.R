@@ -1,5 +1,5 @@
 library(kableExtra)
-
+library(table1)
 here::i_am(
   "code/02_make_table.R"
 )
