@@ -13,7 +13,7 @@ COPY renv.lock .
 #Copy Makefile, config file, hiv_report.Rmd, and data 
 COPY Makefile .
 COPY Final_Project.Rmd .
-Copy num_posts_and_sentiment_summary_2012.csv
+COPY num_posts_and_sentiment_summary_2012.csv .
 
 #Create renv folder that is the same as in the local project directory
 RUN mkdir renv
