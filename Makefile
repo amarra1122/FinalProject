@@ -17,3 +17,7 @@ install:
 .PHONY: clean
 clean:
 	rm -f output/*.rds && rm -f Final_Project.html
+	
+.PHONY: install
+install: 
+	Rscript -e "renv::restore(prompt = FALSE)"
