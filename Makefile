@@ -21,6 +21,7 @@ clean:
 .PHONY: install
 install: 
 	Rscript -e "renv::restore(prompt = FALSE)"
-	
+
+#Works for Mac and Windows
 container:
 	docker run -v "/$$(pwd)/report":/project/Final_Project amarra1122/finalproject
