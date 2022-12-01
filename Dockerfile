@@ -2,6 +2,12 @@
 FROM rocker/r-ubuntu
 RUN apt-get update && apt-get install -y pandoc zlib1g-dev
 
+#Install the missing system libraries
+RUN apt-get update && apt-get install -y libcurl4-openssl-dev 
+RUN apt-get update && apt-get install -y libssl-dev
+RUN apt-get update && apt-get install -y libxml2-dev
+RUN apt-get update && apt-get install -y libfontconfig1-dev
+
 #Creating directory in my image
 RUN mkdir /project
 WORKDIR /project
