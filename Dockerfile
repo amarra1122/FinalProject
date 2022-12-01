@@ -35,6 +35,5 @@ COPY code code
 RUN mkdir output
 RUN mkdir Final_Project
 
-
 #Make and move the report over
-CMD make && mv Final_Project.html Final_Project
+CMD Make Final_Project.html && mv Final_Project.html FinalProject/report
