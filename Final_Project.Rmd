@@ -24,7 +24,7 @@ The *Twitter Sentiment Geographical Index* data set is divided into several csv 
 * State
 * County
 
-The data is extremely comprehensive; holding data from multiple countries from every continent.
+The data is extremely comprehensive; holding data from multiple countries from every continent. The following report will contain information from Greece in 2012.
 
 The variables within the data set are as follows:
 
@@ -46,16 +46,6 @@ the negative sentiment.
 
 
 ===== ===== ===== ===== ===== ===== ===== ===== ===== ===== ===== ===== ===== ===== ===== ===== ===== ===== =====
-
-## Analysis Objectives
-
- My analysis objectives for this project are as follows:
-
-* **1:** I want to compare subjective well-being between developed and undeveloped nations. I will initially do so through descriptive statistics of the mean sentiment index. Later on I will consider performing t-tests and chi-squared analysis comparing the scores of developed and developing nations.
-
-* **2:** I will analyze the sentiment index for all of the states within the USA to gain an idea of which states' social media users have the highest level of subjective well-being. I plan on creating in-depth visualization for this part of the analysis, and I will determine if there are significant sentiment index differences between states by performing multiple proportions tests within R.
-
-* **3:** I wish to experiment with visualization options within R and educate myself on editing figures and tables within R-Markdown. Because this data set not contain a large amount of variables, I believe that it will offer me a great opportunity to hone my figure and table-making skills, while simultaneously allowing me to focus on R-Markdown exploration. 
 
 
 ```{r, include = FALSE}
