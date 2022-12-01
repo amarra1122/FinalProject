@@ -1,5 +1,5 @@
-Final_Project.html: Final_Project.Rmd code/04_render_report.R code/01_load_data.R code/02_make_table.R code/03_make_graph.R  output/project_data1.rds output/final.graph.rds output/final.table.rds
-	Rscript code/04_render_report.R
+Final_Project.html: Final_Project.Rmd code/04_render_report.R code/01_load_data.R code/02_make_table.R code/03_make_graph.R
+	Rscript code/01_load_data.R && Rscript code/02_make_table.R && Rscript code/03_make_graph.R && Rscript code/04_render_report.R
 
 project_data1:
 	Rscript code/01_load_data.R
