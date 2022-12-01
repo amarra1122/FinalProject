@@ -16,6 +16,9 @@ WORKDIR /project
 COPY .Rprofile .
 COPY renv.lock .
 
+# Install make
+RUN apt update && apt install -y make
+
 #Copy Makefile, config file, hiv_report.Rmd, and data 
 COPY Makefile .
 COPY Final_Project.Rmd .
