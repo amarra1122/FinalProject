@@ -16,7 +16,7 @@ install:
 
 .PHONY: clean
 clean:
-	rm -f output/*.rds && rm -f Final_Project.html
+	rm -f output/*.rds && rm -f Final_Project.html && rm -f report/Final_Project.html
 	
 .PHONY: install
 install: 

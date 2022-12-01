@@ -39,4 +39,4 @@ RUN mkdir output
 RUN mkdir Final_Project
 
 #Make and move the report over
-CMD Make Final_Project.html && mv Final_Project.html Final_Project
+CMD make Final_Project.html && mv Final_Project.html Final_Project
