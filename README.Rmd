@@ -12,7 +12,11 @@ Angelo Marra
 This document will help explain how to build my final report using my
 GitHub Repository and Project Directory.
 
-Github Repository: <https://github.com/amarra1122/FinalProject>
+Github Repository: 
+<https://github.com/amarra1122/FinalProject>
+
+Link to Docker Image Used to Build Project Container:
+<https://hub.docker.com/repository/docker/amarra1122/finalproject>
 
 ## **1.:** Before running any R code - restore the R package environment by running the command "make install" in terminal. 
 
